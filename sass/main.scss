@@ -1,0 +1,246 @@
+@import 'colors';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: 'Inter', sans-serif;
+	font-family: 'Rubik', sans-serif;
+	// background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 34.75%, rgba(255, 255, 255, 0.01) 100%);
+	// transform: rotate(-120deg);
+}
+
+/* Header */
+
+.nav-container {
+	position: absolute;
+	width: 1440px;
+	height: 850px;
+	left: 0px;
+	top: 0px;
+
+	background: #0d0d2b;
+
+	.top {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.top {
+		// position: absolute;
+		// top: 66px;
+		// left: 120px;
+		// color: $font-color;
+
+		.logo {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			left: 120px;
+			top: 66px;
+		}
+
+		.crappo {
+			position: absolute;
+			width: 79px;
+			height: 22px;
+			left: 176px;
+			top: 75px;
+
+			font-family: 'Inter';
+			font-style: normal;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 22px;
+			/* identical to box height */
+
+			letter-spacing: 0.04em;
+
+			/* Neutral / White */
+
+			color: #ffffff;
+		}
+	}
+	.nav-menu {
+		align-items: center;
+		justify-content: space-between;
+		position: absolute;
+		width: 339px;
+		height: 28px;
+		left: 706px;
+		top: 72px;
+	}
+
+	.nav-items {
+		display: flex;
+	}
+	.nav-items li {
+		text-transform: capitalize;
+		text-decoration: none;
+		list-style: none;
+		margin-right: 32px;
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		/* identical to box height, or 175% */
+
+		letter-spacing: 0.01em;
+
+		/* Neutral / White */
+
+		color: #ffffff;
+	}
+	.sing-in {
+		
+		.login {
+			position: absolute;
+			text-transform: capitalize;
+			width: 43px;
+			height: 24px;
+			left: 1101px;
+			top: 74px;
+
+			/* Body / Small - Medium */
+
+			font-family: 'Rubik';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 150%;
+			/* identical to box height, or 24px */
+
+			text-align: center;
+
+			/* Neutral / White */
+
+			color: #ffffff;
+		}
+		.divider {
+			position: absolute;
+			width: 24px;
+			height: 0px;
+			left: 1168px;
+			top: 74px;
+
+			opacity: 0.3;
+			/* Gray 6 */
+
+			border: 1px solid #f2f2f2;
+			transform: rotate(90deg);
+		}
+		.button {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 14px 32px;
+
+			position: absolute;
+			width: 130px;
+			height: 52px;
+			left: 1192px;
+			top: 60px;
+
+			/* Color / Accent */
+
+			background: #3671e9;
+			border-radius: 32px;
+		}
+	}
+	.info {
+		position: absolute;
+		width: 365px;
+		height: 40px;
+		left: 120px;
+		top: 243px;
+	}
+	.head {
+		position: absolute;
+		width: 588px;
+		height: 228px;
+		left: 120px;
+		top: 307px;
+
+		/* Heading / H1 */
+
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 76px;
+
+		/* Neutral / White */
+
+		color: #ffffff;
+	}
+	.text {
+		position: absolute;
+		width: 435px;
+		height: 56px;
+		left: 120px;
+		top: 559px;
+
+		/* Body / Small - Regular */
+
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		/* or 175% */
+
+		letter-spacing: 0.01em;
+
+		/* Neutral / Grey 5 */
+
+		color: #e0e0e0;
+	}
+	.hero-btn {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 16px 16px 16px 24px;
+		gap: 24px;
+
+		position: absolute;
+		width: 202px;
+		height: 64px;
+		left: 120px;
+		top: 647px;
+
+		background: #3671e9;
+		border-radius: 32px;
+	}
+	.hero-image {
+		position: absolute;
+		width: 604px;
+		height: 585.15px;
+		left: 716px;
+		top: 163px;
+	}
+	.hero-gradient1 {
+		position: absolute;
+		width: 120px;
+		height: 997.88px;
+		left: 1091.19px;
+		top: 384px;
+
+		transform: rotate(60deg);
+	}
+	.hero-gradient2 {
+		position: absolute;
+		width: 120px;
+		height: 997.88px;
+		left: 660px;
+		top: 1072.86px;
+
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 34.75%, rgba(255, 255, 255, 0.01) 100%);
+		transform: rotate(-120deg);
+	}
+}
