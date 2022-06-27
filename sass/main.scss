@@ -1,0 +1,199 @@
+@import 'variables';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: 'Inter', 'Rubik', sans-serif;
+}
+
+.nav-pos {
+	position: absolute;
+}
+.nav-container {
+	width: 1440px;
+	height: 850px;
+	left: 0px;
+	top: 0px;
+
+	background: $background;
+
+	.top {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.logo {
+		width: 40px;
+		height: 40px;
+		left: 120px;
+		top: 66px;
+	}
+
+	.crappo {
+		width: 79px;
+		height: 22px;
+		left: 176px;
+		top: 75px;
+
+		font-family: 'Inter';
+		font-style: normal;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.04em;
+		color: $text-content;
+	}
+}
+.nav-menu {
+	align-items: center;
+	justify-content: space-between;
+	width: 339px;
+	height: 28px;
+	left: 706px;
+	top: 72px;
+}
+
+.nav-items {
+	display: flex;
+	a {
+		text-transform: capitalize;
+		text-decoration: none;
+		list-style: none;
+		margin-right: 32px;
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		letter-spacing: 0.01em;
+		color: $text-content;
+	}
+}
+
+.sing-in {
+	.login {
+		text-transform: capitalize;
+		width: 43px;
+		height: 24px;
+		left: 1101px;
+		top: 74px;
+		font-family: 'Rubik';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		text-align: center;
+		color: $text-content;
+	}
+	.divider {
+		width: 24px;
+		height: 0px;
+		left: 1168px;
+		top: 74px;
+		opacity: 0.3;
+		border: 1px solid #f2f2f2;
+		transform: rotate(90deg);
+	}
+	.button {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px;
+		gap: 10px;
+		width: 150px;
+		height: 72px;
+		left: 1182px;
+		top: 50px;
+	}
+}
+.info {
+	width: 365px;
+	height: 40px;
+	left: 120px;
+	top: 243px;
+}
+.banner-head {
+	width: 588px;
+	height: 228px;
+	left: 120px;
+	top: 307px;
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 76px;
+	color: $text-content;
+}
+.banner-text {
+	width: 435px;
+	height: 56px;
+	left: 120px;
+	top: 559px;
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: $text-head;
+}
+.banner-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 16px 16px 24px;
+	gap: 24px;
+	width: 202px;
+	height: 64px;
+	left: 120px;
+	top: 647px;
+	background: $btn-background;
+	border-radius: 32px;
+}
+.banner-image {
+	width: 604px;
+	height: 585.15px;
+	left: 716px;
+	top: 163px;
+}
+
+// Gradient do poprawy bo nie działa prawidłowo
+
+// .banner-grad1 {
+// 	box-sizing: border-box;
+
+// 	position: absolute;
+// 	width: 120px;
+// 	height: 997.88px;
+// 	left: 1091.19px;
+// 	top: 384px;
+
+// 	background: linear-gradient(
+// 		180deg,
+// 		rgba(255, 255, 255, 0) 34.75%,
+// 		rgba(255, 255, 255, 0.1) 100%,
+// 		rgba(255, 255, 255, 0.02) 100%
+// 	);
+// 	border: 1px solid #000000;
+// 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+// 	transform: rotate(60deg);
+// }
+// .banner-grad2 {
+// 	box-sizing: border-box;
+
+// 	position: absolute;
+// 	width: 120px;
+// 	height: 997.88px;
+// 	left: 660px;
+// 	top: 1072.86px;
+
+// 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 34.75%, rgba(255, 255, 255, 0.01) 100%);
+// 	border: 1px solid #000000;
+// 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// 	transform: rotate(-120deg);
+// }
