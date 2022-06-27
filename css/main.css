@@ -7,13 +7,14 @@
 
 body {
   position: relative;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', 'Rubik', sans-serif;
 }
 
-/* Header */
-.nav-container {
+.nav-pos {
   position: absolute;
+}
+
+.nav-container {
   width: 1440px;
   height: 850px;
   left: 0px;
@@ -26,16 +27,14 @@ body {
   margin: 0 auto;
 }
 
-.nav-container .top .logo {
-  position: absolute;
+.nav-container .logo {
   width: 40px;
   height: 40px;
   left: 120px;
   top: 66px;
 }
 
-.nav-container .top .crappo {
-  position: absolute;
+.nav-container .crappo {
   width: 79px;
   height: 22px;
   left: 176px;
@@ -46,33 +45,30 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
   letter-spacing: 0.04em;
-  /* Neutral / White */
   color: #ffffff;
 }
 
-.nav-container .nav-menu {
+.nav-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
   width: 339px;
   height: 28px;
   left: 706px;
   top: 72px;
 }
 
-.nav-container .nav-items {
+.nav-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav-container .nav-items li {
+.nav-items a {
   text-transform: capitalize;
   text-decoration: none;
   list-style: none;
@@ -82,45 +78,37 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  /* identical to box height, or 175% */
   letter-spacing: 0.01em;
-  /* Neutral / White */
   color: #ffffff;
 }
 
-.nav-container .sing-in .login {
-  position: absolute;
+.sing-in .login {
   text-transform: capitalize;
   width: 43px;
   height: 24px;
   left: 1101px;
   top: 74px;
-  /* Body / Small - Medium */
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  /* identical to box height, or 24px */
   text-align: center;
-  /* Neutral / White */
   color: #ffffff;
 }
 
-.nav-container .sing-in .divider {
-  position: absolute;
+.sing-in .divider {
   width: 24px;
   height: 0px;
   left: 1168px;
   top: 74px;
   opacity: 0.3;
-  /* Gray 6 */
   border: 1px solid #f2f2f2;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.nav-container .sing-in .button {
+.sing-in .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,66 +116,52 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 14px 32px;
-  position: absolute;
-  width: 130px;
-  height: 52px;
-  left: 1192px;
-  top: 60px;
-  /* Color / Accent */
-  background: #3671e9;
-  border-radius: 32px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  width: 150px;
+  height: 72px;
+  left: 1182px;
+  top: 50px;
 }
 
-.nav-container .info {
-  position: absolute;
+.info {
   width: 365px;
   height: 40px;
   left: 120px;
   top: 243px;
 }
 
-.nav-container .head {
-  position: absolute;
+.banner-head {
   width: 588px;
   height: 228px;
   left: 120px;
   top: 307px;
-  /* Heading / H1 */
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 76px;
-  /* Neutral / White */
   color: #ffffff;
 }
 
-.nav-container .text {
-  position: absolute;
+.banner-text {
   width: 435px;
   height: 56px;
   left: 120px;
   top: 559px;
-  /* Body / Small - Regular */
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  /* or 175% */
   letter-spacing: 0.01em;
-  /* Neutral / Grey 5 */
   color: #e0e0e0;
 }
 
-.nav-container .hero-btn {
+.banner-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +177,6 @@ body {
           align-items: center;
   padding: 16px 16px 16px 24px;
   gap: 24px;
-  position: absolute;
   width: 202px;
   height: 64px;
   left: 120px;
@@ -212,33 +185,10 @@ body {
   border-radius: 32px;
 }
 
-.nav-container .hero-image {
-  position: absolute;
+.banner-image {
   width: 604px;
   height: 585.15px;
   left: 716px;
   top: 163px;
-}
-
-.nav-container .hero-gradient1 {
-  position: absolute;
-  width: 120px;
-  height: 997.88px;
-  left: 1091.19px;
-  top: 384px;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-}
-
-.nav-container .hero-gradient2 {
-  position: absolute;
-  width: 120px;
-  height: 997.88px;
-  left: 660px;
-  top: 1072.86px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(34.75%, rgba(255, 255, 255, 0.04)), to(rgba(255, 255, 255, 0.01)));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 34.75%, rgba(255, 255, 255, 0.01) 100%);
-  -webkit-transform: rotate(-120deg);
-          transform: rotate(-120deg);
 }
 /*# sourceMappingURL=main.css.map */
